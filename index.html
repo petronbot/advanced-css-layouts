@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>Advanced CSS Layouts</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,22 +11,20 @@
 	<link rel="stylesheet" href="theme/ustwo.css">
 	<script src="https://use.typekit.net/qft1aho.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<script src="https://use.fontawesome.com/bc40199eb7.js"></script>
+	<script async src="http://assets.codepen.io/assets/embed/ei.js"></script>
 	<!-- end ustwo theme -->
-	
+
 </head>
 <body class="shower list">
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>Advanced CSS Layouts</h1>
+		<p>Petra Gulicher, ustwo</p>
 	</header>
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+		<h2>Advanced CSS Layouts</h2>
+		<p>CoderFactory Academy, August 31st 2016</p>
 		<img src="pictures/cover.jpg" alt="" class="cover">
-		<!--
-			To apply styles to the certain slides
-			set slide ID to get needed elements
-			-->
 		<style>
 			#cover h2 {
 				margin:30px 0 0;
@@ -38,156 +36,130 @@
 				margin:10px 0 0;
 				text-align:center;
 				color:#FFF;
-				font-style:italic;
+				font-style:normal;
 				font-size:20px;
 				}
-				#cover p a {
-					color:#FFF;
-					}
 		</style>
 	</section>
 	<section class="slide">
-		<h2>Shower key features</h2>
+		<h2>Petra Gulicher</h2>
+		<p>
+			Front end developer, drive-by devops, full-stack JavaScript engineer.
+		</p>
+		<hr>
+		<p>
+			<i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://twitter.com/petronbot">@petronbot</a>
+		</p>
+		<p>
+			<i class="fa fa-github" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://twitter.com/petronbot">@petronbot</a>
+		</p>
+		<p>
+			<i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;<a href="mailto:petra@ustwo.com">petra@ustwo.com</a>
+		</p>
+	</section>
+	<section class="slide">
+		<h2>What we'll try to get through</h2>
 		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
+			<li>Block vs. inline</li>
+			<li>Using floats</li>
+			<!-- <li>Content in columns</li>
+			<li>Absolute & fixed positioning</li> -->
+			<li>Flexbox</li>
+			<li>Grid</li>
+			<!-- <li>Bonus tricks!</li> -->
 		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+		<p class="note">Everything we do today will be regular old CSS.</p>
 	</section>
 	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-	</section>
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
-	</section>
-	<section class="slide">
-		<h2>Serious citations</h2>
+		<h2>Keep it simple</h2>
 		<figure>
 			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+				<p>The only thing better than more CSS, is less CSS.</p>
 			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
+			<figcaption>A smart developer</figcaption>
 		</figure>
 	</section>
 	<section class="slide">
-		<h2>Code samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
+		<h2>display: block</h2>
+		<ul>
+			<li>Takes up full width of parent</li>
+			<li>No elements side-by-side</li>
+			<li>Can have space above and below</li>
+		</ul>
+		<h2>...vs display: inline</h2>
+		<ul>
+			<li>Only takes as much space as it needs</li>
+			<li>Sits alongside other inline elements</li>
+			<li>Cannot have margins applied (hint: use <code>display: inline-block;</code>)</li>
+		</ul>
 	</section>
 	<section class="slide">
-		<h2>Even tables</h2>
+		<p data-height="600" data-theme-id="light" data-slug-hash="JRPpaJ" data-default-tab="css,result" data-user="petronbot" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/petronbot/pen/JRPpaJ/">JRPpaJ</a> by Petra Gulicher (<a href="http://codepen.io/petronbot">@petronbot</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+	</section>
+	<section class="slide">
+		<h2>Floats</h2>
 		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
+			<tr>
+				<th>
+					Pros
+				</th>
+				<th>
+					Cons
+				</th>
+			</tr>
+			<tr>
+				<td>
+					Good browser support
+				</td>
+				<td>
+					Clearfixing
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Easy to write
+				</td>
+				<td>
+					Need to set known width
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Elements always display in source order
+				</td>
+				<td>
+					Unexpected results with irregular sized boxes
+				</td>
+			</tr>
 		</table>
-		<p>It’s good to have information organized.</p>
-	</section>
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="" class="cover">
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
 	</section>
 	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
+		<p data-height="600" data-theme-id="light" data-slug-hash="dpbdwd" data-default-tab="html,result" data-user="petronbot" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/petronbot/pen/dpbdwd/">Floats</a> by Petra Gulicher (<a href="http://codepen.io/petronbot">@petronbot</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 	</section>
 	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
+		<h2>Flexbox</h2>
+		<p>
+			Boxes don't have to have sizes for you to make them fit, or fill a container.
+		</p>
+		<ul>
+			<li><a href="https://philipwalton.github.io/solved-by-flexbox/demos/grids/">Create a grid system</a></li>
+			<li><a href="https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/">Make a sticky footer</a></li>
+			<li><a href="https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/">Vertically centre</a></li>
+		</ul>
 	</section>
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
+	<section>
+		<p data-height="600" data-theme-id="light" data-slug-hash="pEzLzg" data-default-tab="html,result" data-user="petronbot" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/petronbot/pen/pEzLzg/">Flexbox</a> by Petra Gulicher (<a href="http://codepen.io/petronbot">@petronbot</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+		<p>
+			<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A complete guide to Flexbox</a>
+		</p>
 	</section>
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
-		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
-		</style>
+	<section class="slide">
+		<h2>Grid</h2>
+
 	</section>
-	<p class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</p>
-	<!--
-		To hide progress bar from entire presentation
-		just remove “progress” element.
-		-->
+
 	<div class="progress"></div>
 	<script src="shower/shower.min.js"></script>
-	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
 	<!-- Photos by John Carey, fiftyfootshadows.net -->
 </body>
 </html>

@@ -9,17 +9,13 @@
   font-family: 'PxGrotesk-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-#cover h2,
 .slide h2 {
   font-family: 'futura-pt', 'Arial Black', Arial, sans-serif;
   text-transform: uppercase;
 }
 
-#cover p {
-  font-style: initial;
-}
-
 .slide::after {
+  right: 50px;
   background-image:
     linear-gradient(
       150deg,
@@ -35,4 +31,24 @@
       rgb(97, 20, 204) 25%,
       rgb(97, 20, 204)
     );
+}
+
+.slide i.fa {
+  font-style: normal;
+}
+
+.slide a {
+  color: rgb(0, 156, 243);
+}
+
+.progress {
+  border-color: rgb(249, 97, 91);
+}
+
+.slide blockquote {
+  font-size: 2em;
+}
+
+.slide blockquote::before {
+  z-index: -1;
 }
