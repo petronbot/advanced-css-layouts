@@ -9,6 +9,30 @@
   font-family: 'PxGrotesk-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+#cover h2,
 .slide h2 {
   font-family: 'futura-pt', 'Arial Black', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+#cover p {
+  font-style: initial;
+}
+
+.slide::after {
+  background-image:
+    linear-gradient(
+      150deg,
+      rgb(97, 20, 204),
+      rgb(97, 20, 204) 75%,
+      transparent 75%,
+      transparent
+    ),
+    linear-gradient(
+      30deg,
+      transparent,
+      transparent 25%,
+      rgb(97, 20, 204) 25%,
+      rgb(97, 20, 204)
+    );
 }
